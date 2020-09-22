@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<!-- saved from url=(0065)http://www.iut-fbleau.fr/sitebp/pt21/apl2019/LXFF7YU60F782MJC.php -->
+<html lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>
+PT 2.1
+    </title>
+    <link rel="stylesheet" type="text/css" href="./PT 2.1_files/bootstrap.min.css">                                                             
+    <link rel="stylesheet" type="text/css" href="./PT 2.1_files/docs.css">
+    <link rel="stylesheet" type="text/css" href="./PT 2.1_files/geshi-source-c.css">
+    <link rel="stylesheet" type="text/css" href="./PT 2.1_files/css-terminal-emulator.css">
+
+    <link rel="icon" type="image/png" sizes="16x16" href="http://www.iut-fbleau.fr/img/icone16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="http://www.iut-fbleau.fr/img/icone32.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="http://www.iut-fbleau.fr/img/icone64.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="http://www.iut-fbleau.fr/img/icone128.png">
+    <link rel="icon" type="image/png" sizes="256x256" href="http://www.iut-fbleau.fr/img/icone256.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="http://www.iut-fbleau.fr/img/icone512.png">
+    <link rel="icon" type="image/png" sizes="any" href="http://www.iut-fbleau.fr/img/icone.svg">
+
+    <style type="text/css">
+body {
+  padding: 50px;
+}
+    </style>
+
+    <script type="text/javascript" charset="utf-8" language="javascript" src="./PT 2.1_files/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript" charset="utf-8" language="javascript" src="./PT 2.1_files/bootstrap.min.js"></script>
+  </head>
+  <body style="">
+<div id="navbar" class="navbar  navbar-fixed-top   ">
+	<div class="navbar-inner">
+		<div class="container-fluid">
+			<a class="brand" href="http://www.iut-fbleau.fr/sitebp/index.php"><strong>Programmation DUT</strong></a>
+			<ul class="nav">
+				<li class="divider-vertical">
+				</li>
+				<li class="dropdown">
+					<a href="http://www.iut-fbleau.fr/sitebp/pt21/apl2019/LXFF7YU60F782MJC.php#" class="dropdown-toggle" data-toggle="dropdown">APL<b class="caret"></b></a> 
+					<ul class="dropdown-menu">
+						<li>
+							<a href="http://www.iut-fbleau.fr/sitebp/apl11/">APL 1.1</a>
+						</li>	
+						<li>
+							<a href="http://www.iut-fbleau.fr/sitebp/apl12/">APL 1.2</a>
+						</li>	
+						<li>
+							<a href="http://www.iut-fbleau.fr/sitebp/apl21/">APL 2.1</a>
+						</li>	
+						<li>
+							<a href="http://www.iut-fbleau.fr/sitebp/apl31/">APL 3.1</a>
+						</li>	
+						<li>
+							<a href="http://www.iut-fbleau.fr/sitebp/apl41/">APL 4.1</a>
+						</li>	
+					</ul>
+				</li>
+				<li class="divider-vertical">
+				</li>
+				<li class="dropdown">
+					<a href="http://www.iut-fbleau.fr/sitebp/pt21/apl2019/LXFF7YU60F782MJC.php#" class="dropdown-toggle" data-toggle="dropdown">WIM<b class="caret"></b></a> 
+					<ul class="dropdown-menu">
+						<li>
+							<a href="http://www.iut-fbleau.fr/sitebp/web/wim11/">WIM 1.1</a>
+						</li>	
+						<li>
+							<a href="http://www.iut-fbleau.fr/sitebp/web/wim21/">WIM 2.1</a>
+						</li>	
+						<li>
+							<a href="http://www.iut-fbleau.fr/sitebp/web/wim41/">WIM 4.1</a>
+						</li>	
+					</ul>
+
+				</li>
+				<li class="divider-vertical">
+				</li>
+				<li class="dropdown">
+					<a href="http://www.iut-fbleau.fr/sitebp/pt21/apl2019/LXFF7YU60F782MJC.php#" class="dropdown-toggle" data-toggle="dropdown">ASR<b class="caret"></b></a> 
+					<ul class="dropdown-menu">
+<li>
+							<a href="http://www.iut-fbleau.fr/sitebp/asr/asr11">ASR 1.1</a>
+						</li><li>
+							<a href="http://www.iut-fbleau.fr/sitebp/asr/asr21">ASR 2.1</a>
+						</li>
+<li>
+							<a href="http://www.iut-fbleau.fr/sitebp/asr/asr22">ASR 2.2</a>
+						</li>
+
+	
+<li>
+							<a href="http://www.iut-fbleau.fr/sitebp/asr/asr31">ASR 3.1</a>
+						</li>	
+
+
+						<li>
+							<a href="http://www.iut-fbleau.fr/sitebp/asr/asr42">ASR 4.2</a>
+						</li>	
+					</ul>
+
+				</li>
+
+				<li class="divider-vertical">
+				</li>
+				<li class="dropdown">
+					<a href="http://www.iut-fbleau.fr/sitebp/pt21/apl2019/LXFF7YU60F782MJC.php#" class="dropdown-toggle" data-toggle="dropdown">Projets tutorés<b class="caret"></b></a>
+					<ul id="menu_pt" class="dropdown-menu">
+						<li>
+							<a href="http://www.iut-fbleau.fr/sitebp/pt11/">PT 1.1</a>
+						</li>
+						<li>
+							<a href="http://www.iut-fbleau.fr/sitebp/pt21/">PT 2.1</a>
+						</li>
+					</ul>
+				</li>
+				<li class="divider-vertical">
+				</li>
+				<li class="dropdown">
+					<a href="http://www.iut-fbleau.fr/sitebp/pt21/apl2019/LXFF7YU60F782MJC.php#" class="dropdown-toggle" data-toggle="dropdown">Documentation<b class="caret"></b></a>
+					<ul id="menu_documentation" class="dropdown-menu">
+						<li>
+							<a href="http://www.iut-fbleau.fr/sitebp/doc_consignes/index.php">Consignes</a>
+						</li>
+						<li>
+							<a href="http://www.iut-fbleau.fr/sitebp/doc/doc_bib_graphique/index.php">Bibliothèque graphique</a>
+						</li>
+						<li>
+							<a href="http://www.iut-fbleau.fr/sitebp/doc_make/index.php">Organisation du code</a>
+						</li>
+						<li>
+							<a href="http://www.iut-fbleau.fr/docs/java/api/index.html" target="_blank">API Java</a>
+						</li>
+						<li>
+							<a href="http://www.iut-fbleau.fr/docs/android/reference/classes.html" target="_blank">API Android</a>
+						</li>
+					</ul>
+				</li>
+				<li class="divider-vertical">
+				</li>
+					<li><a href="http://www.iut-fbleau.fr/sitebp/maths">Maths</a></li>
+				<li class="divider-vertical">
+				</li>
+
+			</ul>
+			<ul class="nav pull-right">
+				<li class="divider-vertical">
+				</li>
+				<li>
+					<a href="http://www.iut-fbleau.fr/"><i class="icon-home"></i></a>
+				</li>
+				<li class="divider-vertical">
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+    <div class="container">
+      <div class="page-header">
+        <h2>
+Projets Tuteurés 2.1
+        </h2>
+      </div>
+      <div class="row">
+        <div class="span3">
+<div>
+  <ul id="menu" class="nav nav-list well">
+    <li class="nav-header">
+Projets 2019/2020    </li>
+<li><a href="http://www.iut-fbleau.fr/sitebp/pt21/apl2019/LXFF7YU60F782MJC.php">APL</a></li>  </ul>
+</div>
+        </div>
+        <div id="vue" class="span9">
+
+<h3>
+Sudoku
+</h3>
+
+<p>
+Ce projet a pour but de proposer une interface conviviale pour concevoir ou résoudre des
+grilles de Sudoku. Ce jeu de réflexion demande de remplir une grille en respectant
+une configuration de départ différente à chaque partie et quelques règles simples.
+</p>
+<p>
+Vous produirez deux programmes, écrits en Java, sans emprunt extérieur (sauf l'API
+officielle), et accompagnés d'un rapport. Le travail sera fait obligatoirement en binôme
+(un binôme est fortement recommandé, afin de vous permettre de vous familiariser avec les
+techniques de développement collaboratif), et se terminera impérativement avant le
+<strong>vendredi 3 avril 2020 à 18h00</strong>.
+</p>
+<h4>
+Principes généraux
+</h4>
+<p>
+Une grille de Sudoku est composée de neuf lignes et neufs colonnes. Elle est également
+divisée en neuf régions couvrant chacune trois lignes et trois colonnes.
+</p>
+<p>
+Chaque case peut accueillir un chiffre compris entre 1 et 9, mais le même chiffre ne peut
+pas apparaître plusieurs fois sur une même ligne, une même colonne, ou une même région.
+</p>
+<table cellpadding="0" cellspacing="0" style="text-align:center;
+                                              font-size:150%;
+                                              margin-left:auto;
+                                              margin-right:auto;
+                                              border:solid black 4px">
+  <tbody><tr>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+&nbsp;
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+&nbsp;
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px;border-right-width:4px">
+&nbsp;
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+&nbsp;
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+9
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px;border-right-width:4px">
+5
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+&nbsp;
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+&nbsp;
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+4
+    </td>
+  </tr>
+  <tr>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+5
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+3
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px;border-right-width:4px">
+&nbsp;
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+4
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+&nbsp;
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px;border-right-width:4px">
+8
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+7
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+&nbsp;
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+2
+    </td>
+  </tr>
+  <tr>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px;border-bottom-width:4px">
+&nbsp;
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px;border-bottom-width:4px">
+&nbsp;
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px;border-right-width:4px;border-bottom-width:4px">
+&nbsp;
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px;border-bottom-width:4px">
+7
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px;border-bottom-width:4px">
+&nbsp;
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px;border-right-width:4px;border-bottom-width:4px">
+&nbsp;
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px;border-bottom-width:4px">
+6
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px;border-bottom-width:4px">
+&nbsp;
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px;border-bottom-width:4px">
+3
+    </td>
+  </tr>
+  <tr>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+9
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+&nbsp;
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px;border-right-width:4px">
+&nbsp;
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+&nbsp;
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+3
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px;border-right-width:4px">
+4
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+&nbsp;
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+8
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+&nbsp;
+    </td>
+  </tr>
+  <tr>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+&nbsp;
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+4
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px;border-right-width:4px">
+&nbsp;
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+&nbsp;
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+1
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px;border-right-width:4px">
+&nbsp;
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+&nbsp;
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+7
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+&nbsp;
+    </td>
+  </tr>
+  <tr>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px;border-bottom-width:4px">
+&nbsp;
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px;border-bottom-width:4px">
+2
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px;border-right-width:4px;border-bottom-width:4px">
+&nbsp;
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px;border-bottom-width:4px">
+5
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px;border-bottom-width:4px">
+7
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px;border-right-width:4px;border-bottom-width:4px">
+&nbsp;
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px;border-bottom-width:4px">
+&nbsp;
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px;border-bottom-width:4px">
+&nbsp;
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px;border-bottom-width:4px">
+6
+    </td>
+  </tr>
+  <tr>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+4
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+&nbsp;
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px;border-right-width:4px">
+9
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+&nbsp;
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+&nbsp;
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px;border-right-width:4px">
+2
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+&nbsp;
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+&nbsp;
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+&nbsp;
+    </td>
+  </tr>
+  <tr>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+6
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+&nbsp;
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px;border-right-width:4px">
+7
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+9
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+&nbsp;
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px;border-right-width:4px">
+3
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+&nbsp;
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+2
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+1
+    </td>
+  </tr>
+  <tr>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+2
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+&nbsp;
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px;border-right-width:4px">
+&nbsp;
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+6
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+5
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px;border-right-width:4px">
+&nbsp;
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+&nbsp;
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+&nbsp;
+    </td>
+    <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+&nbsp;
+    </td>
+  </tr>
+</tbody></table>
+<p>
+</p>
+<p>
+On fournit au joueur une grille où seulement quelques cases sont initialement remplies.
+Sa tâche consiste à remplir entièrement la grille en respectant les contraintes
+d'unicité. Les grilles de départ sont délicates à construire car elles doivent conduire à
+une seule solution. Si cette propriété est respectée, le joueur doit pouvoir remplir la
+grille grâce à des déductions logiques et non par essais et erreurs (même si pour
+certaines grilles la logique est loin d'être simple).
+</p>
+<h4>
+Fonctionnalités demandées
+</h4>
+<p>
+Le premier programme servira à l'élaboration des grilles de départ. 
+</p>
+<p>
+Pour construire une grille, on pourra partir d'une grille vide ou charger une grille
+existante depuis un fichier. Il devient alors possible d'ajouter ou d'enlever des numéros
+dans la grille (le programme doit empêcher les placements contradictoires). Une fois la
+grille achevée, elle sera sauvegardée dans un nouveau ou un ancien fichier. Le format
+employé pour ces fichiers est décrit dans l'<a href="http://www.iut-fbleau.fr/sitebp/pt21/apl2019/LXFF7YU60F782MJC.php#annexe1">annexe I</a>. La sélection
+d'un fichier en lecture ou en écriture pourra se faire par le biais de la classe
+<a href="http://www.iut-fbleau.fr/docs/java/api/index.html?javax/swing/JFileChooser.html" target="_blank"><tt>JFileChooser</tt></a>.
+</p>
+<p>
+Le second programme servira à résoudre une grille.
+</p>
+<p>
+On commencera par charger une grille depuis un fichier. Puis on choisira si on souhaite
+résoudre la grille manuellement ou automatiquement. En mode automatique, le programme
+affichera la grille résolue et le temps nécessaire à la résolution (on mesurera naïvement
+le temps écoulé à l'aide de la méthode <tt>nanoTime</tt> de la classe
+<a href="http://www.iut-fbleau.fr/docs/java/api/index.html?java/lang/System.html" target="_blank"><tt>System</tt></a>).
+</p>
+<p>
+En mode manuel, le joueur pourra ajouter des chiffres (mais pas si cela contrevient
+directement aux contraintes d'unicité) et enlever des chiffres (mais pas s'ils
+apparaissent dans la grille de départ). En cas de doute, il pourra aussi faire
+temporairement cohabiter jusqu'à quatre chiffres dans une même case (dans ce cas, les
+chiffres qui cohabitent sont limités par les autres cases, mais ne les contraignent pas
+en retour). Le joueur sera félicité par le programme lorsque toutes les cases
+contiendront un chiffre (et un seul).
+</p>
+<p>
+Mettez autant de code que possible en commun entre les deux programmes&nbsp;: de
+nombreuses classes devraient être employées par l'un comme par l'autre.
+</p>
+<h4>
+<a name="annexe1"></a> Annexe I : format de sauvegarde des grilles
+</h4>
+<p>
+Une case sera représentée par le chiffre qu'elle contient si elle est pleine, ou par
+<tt>0</tt> si elle est vide. En mettant bout à bout tous les chiffres d'une ligne, on
+obtient la représentation décimale d'un entier.
+</p>
+<p>
+Par exemple les lignes de la grille donnée plus haut donnent les entiers suivants&nbsp;:
+</p>
+<pre style="text-align:right;width:9em;margin-left:10%">95004
+530408702
+700603
+900034080
+40010070
+20570006
+409002000
+607903021
+200650000
+</pre>
+<p>
+Le fichier contient la représentation canonique Java de ces entiers les uns à la suite
+des autres (sans séparateur). Vous pouvez télécharger <a href="http://www.iut-fbleau.fr/sitebp/pt21/apl2019/exemple.gri">le fichier
+correspondant à cet exemple</a> pour tester votre programme.
+</p>
+
+<h4>
+<a name="annexe2"></a> Annexe II : sources
+</h4>
+<p>
+Les sources de votre projet (et <strong>pas</strong> les fichiers générés
+<code>.class</code>) devront être disponibles à tout moment sur le
+<a href="https://dwarves.iut-fbleau.fr/git" target="_blank">serveur GoGS du
+département</a>. Votre dépôt sera privé, nommé obligatoirement <code>PT21_APL2019</code>
+et incluera Luc Hernandez (login&nbsp;: <code>hernand</code>) dans la liste des
+collaborateurs. Le nombre de soumissions, leur date et l'équilibre entre leurs auteurs
+influeront sur la note finale.
+</p>
+<p>
+Pour chaque classe, vous prévoierez un fichier source. Suivez les
+<a href="http://www.iut-fbleau.fr/sitebp/doc_consignes/"> consignes</a> habituelles scrupuleusement. La
+définition de chaque classe et de chaque membre de classe sera précédée d'un commentaire
+formaté pour permettre la génération de documentation technique par l'outil
+<code>javadoc</code> (<a href="http://www.iut-fbleau.fr/sitebp/pt21/apl2019/Direction.java" target="_blank">ceci</a> est un exemple de
+fichier source bien commenté).
+</p>
+<p>
+Un fichier <code>Makefile</code> devra permettre la compilation de votre projet (par la
+commande <code>make</code>) ainsi que son exécution (par la commande <code>make
+run</code>). Transcrivez bien toutes les dépendances entre vos fichiers dans les règles.
+La commande <code>javac</code> fait déjà (très mal) un travail similaire à
+<code>make</code>, ce qui peut créer des interférences. Pour éviter cela, pensez à lui
+passer l'option <code>-implicit:none</code>.
+</p>
+
+<h4>
+<a name="annexe3"></a> Annexe III : rapport
+</h4>
+<p>
+Le rapport d'avancement prendra la forme d'un fichier <tt>PDF</tt> disponible avec les
+sources dans votre dépôt GoGS. Vous y inclurez en particulier&nbsp;:
+</p>
+<ul>
+  <li>
+une introduction contenant une brève description du sujet,
+  </li>
+  <li>
+la description des fonctionnalités de votre programme, aidée de captures d'écran,
+  </li><li>
+une présentation de la structure du programme, avec diagramme de classes à l'appui,
+  </li>
+  <li>
+une exposition de l'algorithme qui résoud les grilles,
+  </li>
+  <li>
+une conclusion personnelle pour chaque auteur.
+  </li>
+</ul>
+<p>
+Soignez la présentation&nbsp;! L'orthographe, la grammaire, les pages de garde, la table des
+matières, les en-tête et pieds de page ne sont pas en option...
+</p>
+<p>
+Notez bien que le rapport ne doit pas contenir d'extrait du code source du projet, étant
+donné que le correcteur peut aller le consulter directement s'il en éprouve le besoin.
+N'hésitez pas en revanche à illustrer vos propos par des schémas. Ceux-ci peuvent être
+construits directement dans le logiciel de traitement de texte s'il le permet, ou dans un
+logiciel dédié, tel que <a href="https://inkscape.org/fr/">Inkscape</a> ou 
+<a href="https://fr.libreoffice.org/discover/draw/">Draw</a> (tous deux gratuits).
+</p>
+        </div>
+      </div>
+      <div class="page-header">
+      </div>
+      <p class="pull-left">
+<a href="http://www.iut-fbleau.fr/sitebp/">retour à la page d'accueil </a><i class="icon-home"></i>
+      </p>
+      <p class="pull-right">
+<i class="icon-arrow-up"></i><a href="http://www.iut-fbleau.fr/sitebp/pt21/apl2019/LXFF7YU60F782MJC.php#"> retour au sommet</a>
+      </p>
+    </div>
+  
+
+
+</body></html>

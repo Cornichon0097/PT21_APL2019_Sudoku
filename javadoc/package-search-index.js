@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"controleurs.assistance"},{"l":"controleurs.fichiers"},{"l":"controleurs.menus"},{"l":"controleurs.utilisateur"},{"l":"modeles"},{"l":"vues"},{"l":"vues.affichage"},{"l":"vues.menus"},{"l":"vues.messages"},{"l":"vues.sudoku"}]
